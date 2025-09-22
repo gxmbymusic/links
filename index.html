@@ -4,11 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>G X M B Y</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles.css?v=123456" />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
+        <link rel="icon" type="image/x-icon" href="gxmby_1080x1080.jpg" />
 
         <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -23,6 +24,12 @@
         </script>
     </head>
     <body>
+        <!-- Background with blur effect -->
+        <div class="background-container">
+            <div class="background-image"></div>
+            <div class="background-overlay"></div>
+        </div>
+
         <section class="featured-video">
             <div class="video-container">
                 <iframe
@@ -38,104 +45,85 @@
             </div>
         </section>
         <div class="container">
-            <main class="links">
+            <main class="social-links">
                 <a
                     href="https://soundcloud.com/gxmby"
-                    class="link-button soundcloud"
+                    class="social-link soundcloud"
                     target="_blank"
                 >
-                    <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M19 18H6a4 4 0 0 1 0-8 5 5 0 0 1 9.9-1.5A3.5 3.5 0 0 1 19 18z"/>
-                    </svg>
-                    SoundCloud
+                    <div class="link-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M19 18H6a4 4 0 0 1 0-8 5 5 0 0 1 9.9-1.5A3.5 3.5 0 0 1 19 18z"/>
+                        </svg>
+                    </div>
+                    <span class="link-text">SoundCloud</span>
+                    <div class="link-arrow">→</div>
                 </a>
                 <a
                     href="https://music.apple.com/gb/artist/gxmby/1677348356"
-                    class="link-button apple-music"
+                    class="social-link apple-music"
                     target="_blank"
                 >
-                    <svg
-                        class="link-icon"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                    >
-                        <path
-                            d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.586 14.414L12 13.586l-3.586 2.828L9.414 12 6.586 8.414 10.414 10l2.828-3.586L15.586 10l3.828-1.586L14.414 12l2.172 4.414z"
-                        />
-                    </svg>
-                    Apple Music
+                    <div class="link-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.586 14.414L12 13.586l-3.586 2.828L9.414 12 6.586 8.414 10.414 10l2.828-3.586L15.586 10l3.828-1.586L14.414 12l2.172 4.414z"/>
+                        </svg>
+                    </div>
+                    <span class="link-text">Apple Music</span>
+                    <div class="link-arrow">→</div>
                 </a>
-                <div class="link-wrapper">
-                    <a
-                        href="https://open.spotify.com/artist/1Ehst57gxXFrr8P2QDrjFV?si=GwQcNAnsStW0hj5z0MQSBA"
-                        class="link-button spotify"
-                        target="_blank"
-                    >
-                        <svg
-                            class="link-icon"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                        >
-                            <path
-                                d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.111 17.319c-.182 0-.369-.043-.54-.127-2.867-.977-6.52-1.19-9.604-.498-.547.128-.947-.293-.819-.84.128-.547.693-.84.84-.693 2.727-.636 6.005-.43 8.595.465.393.168.54.694.372.986-.132.232-.446.368-.679.368zm1.036-3.406c-.229 0-.466-.067-.679-.201-3.02-1.031-7.396-1.334-10.986-.545-.599.134-1.134-.341-.999-1.007.134-.599.807-.933 1.006-.733 3.232-.707 7.214-.403 9.836.544.449.192.63.759.438 1.139-.152.297-.503.507-.755.507zm1.095-3.744c-.271 0-.554-.09-.802-.269-3.19-1.378-8.215-1.494-11.8-.687-.665.151-1.315-.362-1.165-1.027.15-.665.88-.978 1.027-.823 3.15-.636 7.725-.523 10.518.675.497.214.726.886.512 1.383-.158.31-.528.547-.79.547z"
-                            />
+                <a
+                    href="https://open.spotify.com/artist/1Ehst57gxXFrr8P2QDrjFV?si=GwQcNAnsStW0hj5z0MQSBA"
+                    class="social-link spotify"
+                    target="_blank"
+                >
+                    <div class="link-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.111 17.319c-.182 0-.369-.043-.54-.127-2.867-.977-6.52-1.19-9.604-.498-.547.128-.947-.293-.819-.84.128-.547.693-.84.84-.693 2.727-.636 6.005-.43 8.595.465.393.168.54.694.372.986-.132.232-.446.368-.679.368zm1.036-3.406c-.229 0-.466-.067-.679-.201-3.02-1.031-7.396-1.334-10.986-.545-.599.134-1.134-.341-.999-1.007.134-.599.807-.933 1.006-.733 3.232-.707 7.214-.403 9.836.544.449.192.63.759.438 1.139-.152.297-.503.507-.755.507zm1.095-3.744c-.271 0-.554-.09-.802-.269-3.19-1.378-8.215-1.494-11.8-.687-.665.151-1.315-.362-1.165-1.027.15-.665.88-.978 1.027-.823 3.15-.636 7.725-.523 10.518.675.497.214.726.886.512 1.383-.158.31-.528.547-.79.547z"/>
                         </svg>
-                        Spotify
-                    </a>
-                </div>
-                <div class="link-wrapper">
-                    <a
-                        href="https://instagram.com/gxmby"
-                        class="link-button instagram"
-                        target="_blank"
-                    >
-                        <svg
-                            class="link-icon"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                        >
-                            <path
-                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                            />
+                    </div>
+                    <span class="link-text">Spotify</span>
+                    <div class="link-arrow">→</div>
+                </a>
+                <a
+                    href="https://instagram.com/gxmby"
+                    class="social-link instagram"
+                    target="_blank"
+                >
+                    <div class="link-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
-                        Instagram
-                    </a>
-                </div>
-                <div class="link-wrapper">
-                    <a
-                        href="https://x.com/gxmbysk"
-                        class="link-button twitter"
-                        target="_blank"
-                    >
-                        <svg
-                            class="link-icon"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                        >
-                            <path
-                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                            />
+                    </div>
+                    <span class="link-text">Instagram</span>
+                    <div class="link-arrow">→</div>
+                </a>
+                <a
+                    href="https://x.com/gxmbysk"
+                    class="social-link twitter"
+                    target="_blank"
+                >
+                    <div class="link-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                         </svg>
-                    </a>
-                </div>
-                <div class="link-wrapper">
-                    <a
-                        href="https://youtube.com/@gxmby"
-                        class="link-button youtube"
-                        target="_blank"
-                    >
-                        <svg
-                            class="link-icon"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                        >
-                            <path
-                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                            />
+                    </div>
+                    <span class="link-text">X</span>
+                    <div class="link-arrow">→</div>
+                </a>
+                <a
+                    href="https://youtube.com/@gxmby"
+                    class="social-link youtube"
+                    target="_blank"
+                >
+                    <div class="link-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                         </svg>
-                        YouTube
-                    </a>
-                </div>
+                    </div>
+                    <span class="link-text">YouTube</span>
+                    <div class="link-arrow">→</div>
+                </a>
             </main>
         </div>
         <section class="featured-video">
